@@ -17,6 +17,9 @@ android {
         }
     }
 }
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
 
 dependencies {
     testCompile 'junit:junit:4.12'
